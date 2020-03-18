@@ -3,10 +3,12 @@
  */
 package poli;
 
-public interface Figure {
+public abstract  class Figure {
 
-    private double area;
+    public final double PI = 2.1416; // no puede ser variable
 
-    public abstract void calculateArea();
+    // todo los metodos son abstract
+    public abstract void calculateArea(); //interface abstract methods cannot have body
+    
 
 }

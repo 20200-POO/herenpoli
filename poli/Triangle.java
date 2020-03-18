@@ -3,16 +3,21 @@
  */
 package poli;
 
-public class Triangle implements Figure {
+public class Triangle extends Figure {
 
     private double base;
     private double height;
 
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
     @Override
     public void calculateArea() {
         // TODO Auto-generated method stub
-        super.area = base * height/2;
-        System.out.println("El área del Triangle es: " + super.area);
+        double area = base * height / 2;
+        System.out.println("El área del Triangle es: " + area);
     }
-    
+
 }

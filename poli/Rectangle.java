@@ -3,32 +3,21 @@
  */
 package poli;
 
-public class Rectangle implements Figure {
+public class Rectangle extends Figure {
 
     private double base;
     private double height;
 
+    public Rectangle(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
     @Override
     public void calculateArea() {
         // TODO Auto-generated method stub
-        super.area = base * height;
-        System.out.println("El área del Rectangle es: " + super.area);
-    }
-
-    public double getBase() {
-        return base;
-    }
-
-    public void setBase(double base) {
-        this.base = base;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
+        double area = base * height;
+        System.out.println("El área del Rectangle es: " + area + " PI=" + super.PI);
     }
 
 }
