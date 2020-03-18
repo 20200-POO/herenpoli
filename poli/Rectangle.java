@@ -3,7 +3,7 @@
  */
 package poli;
 
-public class Rectangle extends Figure {
+public class Rectangle implements Figure {
 
     private double base;
     private double height;
@@ -17,7 +17,7 @@ public class Rectangle extends Figure {
     public void calculateArea() {
         // TODO Auto-generated method stub
         double area = base * height;
-        System.out.println("El área del Rectangle es: " + area + " PI=" + super.PI);
+        System.out.println("El área del Rectangle es: " + area + " PI=" + PI);
     }
 
 }

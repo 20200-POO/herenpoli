@@ -3,7 +3,7 @@
  */
 package poli;
 
-public class Triangle extends Figure {
+public class Triangle implements Figure {
 
     private double base;
     private double height;
